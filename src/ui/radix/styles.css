@@ -19,7 +19,7 @@
 }
 
 .SliderTrack {
-  background-color: var(--blackA10);
+  background-color: var(--blackA4);
   position: relative;
   flex-grow: 1;
   border-radius: 9999px;
@@ -33,7 +33,7 @@
 
 .SliderRange {
   position: absolute;
-  background-color: white;
+  background-color: var(--blackA10);
   border-radius: 9999px;
   height: 100%;
 }

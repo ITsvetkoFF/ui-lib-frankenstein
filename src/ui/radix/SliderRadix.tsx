@@ -1,16 +1,24 @@
-import React from 'react';
-import * as Slider from '@radix-ui/react-slider';
-import './styles.css';
+import React from "react";
+import * as Slider from "@radix-ui/react-slider";
+import "./styles.css";
+import { SliderProps } from "../types";
 
-const SliderDemo = () => (
-    <form>
-      <Slider.Root className="SliderRoot" defaultValue={[50]} max={100} step={1} aria-label="Volume">
-        <Slider.Track className="SliderTrack">
-          <Slider.Range className="SliderRange" />
-        </Slider.Track>
-        <Slider.Thumb className="SliderThumb" />
-      </Slider.Root>
-    </form>
-);
+export const SliderRadix = (props: SliderProps) => {
+  const { value, onValueChange, ...rest } = props;
 
-export default SliderDemo;
+  return (
+    <Slider.Root
+      className="SliderRoot"
+      value={[value]}
+      onValueChange={(values) => {
+        onValueChange(values[0]);
+      }}
+      {...rest}
+    >
+      <Slider.Track className="SliderTrack">
+        <Slider.Range className="SliderRange" />
+      </Slider.Track>
+      <Slider.Thumb className="SliderThumb" />
+    </Slider.Root>
+  );
+};
