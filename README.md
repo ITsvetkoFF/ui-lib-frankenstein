@@ -48,9 +48,9 @@ npm run build ## to see build size of selected choice (please edit `App.tsx` inc
 ## Description of options to compare
 
 _notes:_
-_- contestants are subjective, but based on popularity_
-_- Examples are not adjusted to one style to see default options libraries can suggest_
-_- Comparison is based on `Slider` component and definitely not exhaustive_
+- contestants are subjective, but based on popularity
+- Examples are not adjusted to one style to see default options libraries can suggest
+- Comparison is based on `Slider` component and definitely not exhaustive
 
 ### 1. Radix-UI
 

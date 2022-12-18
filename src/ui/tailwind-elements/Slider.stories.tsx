@@ -18,4 +18,5 @@ Primary.args = {
   max: 200,
   step: 10,
   "aria-label": "Accesisble Label",
+  id: "some_id",
 };
